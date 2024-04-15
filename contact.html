@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Add your CSS file link here -->
+
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="personal project.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="artist.html">ARTISTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>  
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <style>
+            nav{
+        display: flex;
+        padding: 1% 6%;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    
+    nav img{
+        width: 150px;
+    }
+    .nav-links{
+        flex: 1;
+        text-align: right;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 0px 12px;
+        position: relative;
+    }
+    .nav-links ul li a{
+        color: #000;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+
+   
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .artist {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .artist img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .artist-info {
+            flex-grow: 1;
+        }
+
+        .artist-name {
+            font-weight: bold;
+        }
+
+        .contact-info {
+            margin-left: 10px;
+            color: #888;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>Contact the artists personally</p>
+
+        <div class="artist">
+            
+            <div class="artist-info">
+                <p class="artist-name">Ulla Kuronen</p>
+                <p class="contact-info">Email: farbe@kolumbus.fi <br>Instagram: @kuronenulla</p>
+            </div>
+        </div>
+
+        <div class="artist">
+           
+            <div class="artist-info">
+                <p class="artist-name">Anna Melnik</p>
+                <p class="contact-info">Email: melniktttt@gmail.com<br>Instagram: @melnik.ttt</p>
+            </div>
+        </div>
+
+        <div class="artist">
+            
+            <div class="artist-info">
+                <p class="artist-name">Linda Bondestram</p>
+                <p class="contact-info">Email: linda.bondestam@gmail.com<br>Instagram: @lindabondestam</p>
+            </div>
+        </div>
+
+        <div class="artist">
+           
+            <div class="artist-info">
+                <p class="artist-name">Anna saarikivi</p>
+                <p class="contact-info">Email: anna.saarikivi@gmail.com<br>Instagram: @annasaarikivi</p>
+            </div>
+        </div>
+
+        <div class="artist">
+            
+            <div class="artist-info">
+                <p class="artist-name">Paula Pitkänen</p>
+                <p class="contact-info">Email: papucreates@gmail.com<br>Instagram: @paulapitkanen.art</p>
+            </div>
+        </div>
+
+        <div class="artist">
+            
+            <div class="artist-info">
+                <p class="artist-name">Liisa Tuulikki</p>
+                <p class="contact-info">Email: liisa@liisatuulikki.com<br>Instagram: @liisa.tuulikki</p>
+            </div>
+        </div>
+
+        <div class="artist">
+           
+            <div class="artist-info">
+                <p class="artist-name">Melissa Tran
+                </p>
+                <p class="contact-info">Email: - <br>Instagram: @bondedbymel</p>
+            </div>
+        </div>
+        <div class="artist">
+            
+            <div class="artist-info">
+                <p class="artist-name"> Creater: Soomin Son</p>
+                <p class="contact-info">Email: soomin-s@ishelsinki.fi<br>Instagram: @so0_.nme</p>
+            </div>
+        </div>
+
+        <!-- Add more artist entries as needed -->
+
+    </div>
+</body>
+</html>

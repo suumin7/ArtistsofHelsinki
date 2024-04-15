@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<nav>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="personal project.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTISTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>  
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<style>
+        nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+    body {
+        margin: 0; /* Remove default body margin */
+        font-family: 'Poppins', sans-serif; /* Set default font family */
+    }
+
+    .header {
+        position: relative;
+        height: 300px; /* Adjust as needed */
+        background-image: url(images/anna\ melnik\ banner.png); /* Replace 'big_picture.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        opacity: 1; /* Adjust the opacity as needed */    
+    }
+
+    .header-text {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 1px 2px; /* Adjust top and bottom padding as needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 40%;
+           
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 75px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .profile-info {
+        display: flex;
+        align-items: center;
+        margin-right: 40px; /* Adjust as needed */
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .profile-picture {
+        width: 250px; /* Adjust as needed */
+        height: auto;
+        border-radius: 50%; /* Make it round */
+        margin-right: 20px; /* Adjust as needed */
+    }
+
+    .story {
+        max-width: 800px; /* Adjust as needed */
+    }
+
+    .story h1 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .story p {
+        line-height: 1.4;
+    }
+
+    .go-back-home {
+    position: fixed;
+    bottom: 20px; /* Adjust vertical position */
+    left: 20px; /* Adjust horizontal position */
+}
+
+.go-back-home button {
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #f44336; /* Red text color */
+    border: 2px solid #f44336; /* Red border */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.go-back-home button:hover {
+    background-color: #f44336; /* Red background on hover */
+    color: white; /* White text color on hover */
+    transition: 0.5s;
+}
+
+.go-back-home button:hover {
+    background-color: #d32f2f;
+}
+
+  
+
+    
+</style>
+
+    
+</head>
+<body>
+
+    <div class="header">
+        
+        <div class="header-text">
+            <h1 class="name">Anna Melnik</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="profile-info">
+            <img class="profile-picture" src="images/ANNAMELNIK.png" alt="Profile Picture"> <!-- Replace 'small_picture.jpg' with your image path -->
+            <div>
+                <p><strong>Name:</strong> Anna Melnik</p>
+                <p><strong>Art Style:</strong> Floral and Abstract Tattooist</p>
+            </div>
+        </div>
+
+        <div class="go-back-home">
+            <button onclick="window.location.href = 'personal project.html';">Go back home</button>
+        </div>
+
+        <div class="story">
+            <h1 style="font-weight: bold; font-size: 24px;">Anna Melnik: a story of inspiration</h1>
+
+            <p>Anna Melnik's journey through the world of art is a captivating narrative of self-discovery, resilience, and the pursuit of creative expression. From the tender age of childhood, Anna's artistic inclinations were nurtured by the loving guidance of her aunt, a self-taught artist whose passion for creation ignited a spark within her. Recalling fond memories of crafting candle holders beneath the sprawling branches of a walnut tree, Anna's early experiences laid the foundation for her artistic exploration.
+            </p>
+            <p>However, as she traversed the path of formal education in art, Anna encountered the stifling pressure of academic standards that threatened to dampen her spirit. "Studying academic art kind of killed all my patience to create," she reflects, acknowledging the demoralizing effect of relentless criticism on her artistic endeavours. Yet, amidst the challenges, Anna's unwavering determination led her to forge her own path, transcending conventional boundaries to explore diverse mediums and forms of expression.
+            </p>
+            <p>The pivotal moments in Anna's artistic evolution are marked by courage and serendipity. From the moment her partner placed a tattoo machine in her hands, to the transformative experience of joining a community of talented artists, each encounter propelled her forward on her creative odyssey. "I found tattooing to be my biggest love," Anna shares, her passion evident in every stroke of ink that adorns her clients' skin.
+            </p>
+            <p>Anna's artistic style is a testament to her unique perspective and unwavering dedication to craftsmanship. Drawing inspiration from the beauty of nature intertwined with abstract elements, her work embodies a harmonious blend of fluidity and structure. "I focus on making harmony between body and art," she explains, describing her process of infusing graphic techniques with her distinct artistic vision.
+            </p>
+            <p>Throughout her journey, Anna has drawn inspiration from a myriad of sources, from the masterpieces housed within the Hermitage to the works of modern-day visionaries. Yet, it is her own experiences and emotions that serve as the ultimate wellspring of creativity. "I'm inspired by people, by shapes of nature, by movements and feelings," she reveals, highlighting the deeply personal nature of her artistic exploration.
+            </p>
+            <p>Amidst the triumphs and accolades, Anna's path has not been without its challenges. Battling self-doubt and societal expectations, she has learned to navigate the turbulent waters of creative pursuit with resilience and self-compassion. "Stop comparing yourself with others and be more kind to yourself," she advises, offering sage wisdom born of her own journey.
+            </p>
+            <p>Looking toward the future, Anna's aspirations are as boundless as her imagination. From pursuing artist residencies to delving deeper into textile art, she envisions a future where her creations serve as a testament to the power of self-expression and human connection. "My textile art is my therapy," she shares, a reminder of the transformative potential of art to heal and transcend.
+            </p>
+            <p>As Anna Melnik continues to weave her narrative through the tapestry of the art world, her legacy is one of inspiration and empowerment. With each stroke of her brush and pulse of her needle, she leaves an indelible mark on the canvas of human experience, reminding us all of the profound beauty that lies within the depths of our souls.
+
+
+            </p>
+            
+            <!-- More paragraphs as needed -->
+        </div>
+        
+    </div>
+
+   
+</body>
+</html>

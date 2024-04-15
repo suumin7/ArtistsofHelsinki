@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<nav>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="personal project.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTISTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>  
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<style>
+        nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+    body {
+        margin: 0; /* Remove default body margin */
+        font-family: 'Poppins', sans-serif; /* Set default font family */
+    }
+
+    .header {
+        position: relative;
+        height: 300px; /* Adjust as needed */
+        background-image: url(images/paula\ banner.png); /* Replace 'big_picture.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        opacity: 1; /* Adjust the opacity as needed */    
+    }
+
+    .header-text {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 1px 2px; /* Adjust top and bottom padding as needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 40%;
+           
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 75px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .profile-info {
+        display: flex;
+        align-items: center;
+        margin-right: 40px; /* Adjust as needed */
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .profile-picture {
+        width: 250px; /* Adjust as needed */
+        height: auto;
+        border-radius: 50%; /* Make it round */
+        margin-right: 20px; /* Adjust as needed */
+    }
+
+    .story {
+        max-width: 800px; /* Adjust as needed */
+    }
+
+    .story h1 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .story p {
+        line-height: 1.4;
+    }
+
+    .go-back-home {
+    position: fixed;
+    bottom: 20px; /* Adjust vertical position */
+    left: 20px; /* Adjust horizontal position */
+}
+
+.go-back-home button {
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #f44336; /* Red text color */
+    border: 2px solid #f44336; /* Red border */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.go-back-home button:hover {
+    background-color: #f44336; /* Red background on hover */
+    color: white; /* White text color on hover */
+    transition: 0.5s;
+}
+
+.go-back-home button:hover {
+    background-color: #d32f2f;
+}
+
+  
+
+    
+</style>
+
+    
+</head>
+<body>
+
+    <div class="header">
+        
+        <div class="header-text">
+            <h1 class="name">Paula Pitkänen</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="profile-info">
+            <img class="profile-picture" src="images/paula.png" alt="Profile Picture"> <!-- Replace 'small_picture.jpg' with your image path -->
+            <div>
+                <p><strong>Name:</strong> Paula Pitkänen</p>
+                <p><strong>Art Style:</strong> visual artist and painter</p>
+            </div>
+        </div>
+
+        <div class="go-back-home">
+            <button onclick="window.location.href = 'personal project.html';">Go back home</button>
+        </div>
+
+        <div class="story">
+            <h1 style="font-weight: bold; font-size: 24px;">Paula Pitkänen: a story of inspiration</h1>
+
+            <p>Paula's journey into the world of art is a testament to the enduring power of passion and perseverance. From the tender age of 12, she discovered her love for painting in the vibrant hues of her imagination. Despite familial scepticism, Paula's unwavering determination led her to pursue her artistic aspirations, fueled by the inspiration of her grandmother's sister, her idol in the world of art.
+            </p>
+            <p>Navigating the currents of life's challenges, Paula embarked on a circuitous path, exploring textile design and graphic arts to secure financial stability for her growing family. Yet, her true calling beckoned from the recesses of her soul, prompting her to rekindle her artistic flame seven years ago. With the support of cherished friends and a newfound resolve, Paula embarked on a journey of rediscovery, immersing herself in the study of painting once more.
+            </p>
+           <p>The turning points in Paula's artistic career are marked by moments of courage and camaraderie. From the exhilaration of her first evening painting to the unwavering support of her friends, each milestone propelled her forward on her creative odyssey. Through the ebb and flow of life's challenges, Paula remained steadfast in her pursuit of artistic expression, finding solace and fulfilment in the vibrant palette of her canvases.
+        </p>
+           <p>Paula's artistic style is a reflection of her intuitive spirit, imbued with vibrant colours and expressive forms. Drawing inspiration from the works of Matisse and other artists who embrace the kaleidoscope of colour, she infuses each piece with a sense of vitality and dynamism. Guided by her intuition, Paula approaches the creative process with openness and curiosity, allowing each stroke of paint to speak to her in a language all its own.
+        </p>
+           <p>Throughout her journey, Paula has grappled with the practical realities of balancing motherhood with her artistic pursuits. Yet, her resilience and determination have enabled her to overcome these obstacles, carving out moments of respite and rejuvenation amidst life's demands. With each brushstroke, she seeks to impart a sense of peace and positivity to her viewers, infusing her art with a timeless message of hope and resilience.
+        </p>
+           <p>Looking toward the future, Paula's aspirations are simple yet profound: to continue painting for as long as her heart desires. With each new work of art, she leaves behind a legacy of love and beauty, a testament to the transformative power of creativity and the human spirit. Through her art, Paula invites us to fall in love with the universe anew, one brushstroke at a time.
+        </p>
+            <!-- More paragraphs as needed -->
+        </div>
+        
+    </div>
+
+   
+</body>
+</html>

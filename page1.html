@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<nav>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="personal project.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTISTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>  
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<style>
+        nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+    body {
+        margin: 0; /* Remove default body margin */
+        font-family: 'Poppins', sans-serif; /* Set default font family */
+    }
+
+    .header {
+        position: relative;
+        height: 300px; /* Adjust as needed */
+        background-image: url(images/ullabanner.png); /* Replace 'big_picture.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        opacity: 1; /* Adjust the opacity as needed */    
+    }
+
+    .header-text {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 1px 2px; /* Adjust top and bottom padding as needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 40%;
+           
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 75px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .profile-info {
+        display: flex;
+        align-items: center;
+        margin-right: 40px; /* Adjust as needed */
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .profile-picture {
+        width: 250px; /* Adjust as needed */
+        height: auto;
+        border-radius: 50%; /* Make it round */
+        margin-right: 20px; /* Adjust as needed */
+    }
+
+    .story {
+        max-width: 800px; /* Adjust as needed */
+    }
+
+    .story h1 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .story p {
+        line-height: 1.4;
+    }
+
+    .go-back-home {
+    position: fixed;
+    bottom: 20px; /* Adjust vertical position */
+    left: 20px; /* Adjust horizontal position */
+}
+
+.go-back-home button {
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #f44336; /* Red text color */
+    border: 2px solid #f44336; /* Red border */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.go-back-home button:hover {
+    background-color: #f44336; /* Red background on hover */
+    color: white; /* White text color on hover */
+    transition: 0.5s;
+}
+
+.go-back-home button:hover {
+    background-color: #d32f2f;
+}
+
+  
+
+    
+</style>
+
+    
+</head>
+<body>
+
+    <div class="header">
+        
+        <div class="header-text">
+            <h1 class="name">Ulla Kuronen</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="profile-info">
+            <img class="profile-picture" src="images/ullak.jpeg" alt="Profile Picture"> <!-- Replace 'small_picture.jpg' with your image path -->
+            <div>
+                <p><strong>Name:</strong> Ulla Kuronen</p>
+                <p><strong>Art Style:</strong> painter and paint supplier</p>
+            </div>
+        </div>
+
+        <div class="go-back-home">
+            <button onclick="window.location.href = 'personal project.html';">Go back home</button>
+        </div>
+
+        <div class="story">
+            <h1 style="font-weight: bold; font-size: 24px;">Ulla Kuronen: a story of inspiration</h1>
+
+            <p>Ulla Kuronen's journey through the realm of art was marked not only by the trials of an unsupportive environment but also by the formidable challenge of battling cancer. Born into a family where art was viewed as a frivolous pursuit, Ulla's early passion for painting was met with skepticism and disapproval. "My parents didn't understand my love for art," she recalled, her voice tinged with a hint of sadness. "They wanted me to pursue a more conventional path, something practical and secure."</p>
+            <p>Despite the lack of support from her family, Ulla's passion for art continued to burn brightly, a flickering flame that refused to be extinguished. "I knew from a young age that I wanted to be an artist," she explained, her eyes alight with determination. "Painting was my escape, my sanctuary, a world where I could express myself freely without judgment or criticism."</p>
+            <p>As she grew older, Ulla's love for art only intensified, but the road to pursuing her passion was fraught with obstacles. "I faced rejection at every turn," she admitted, her voice tinged with frustration. "But I refused to give up. I knew that art was my calling, and I was determined to pursue it no matter what."
+
+            </p>
+            <p>However, just as Ulla's artistic career began to gain momentum, she was dealt a devastating blow: a diagnosis of cancer. It was a moment that threatened to derail her dreams and shatter her spirit, but Ulla refused to succumb to despair. "It was like a storm raging within me, threatening to engulf everything I held dear," she recalled, her voice trembling with emotion. "But amidst the chaos, I found solace in my art. It became my sanctuary, a place where I could escape the pain and find peace amidst the turmoil."</p>
+            <p>Throughout her treatment, Ulla continued to paint, channeling her emotions onto the canvas with an intensity that bordered on cathartic. Each brushstroke was a testament to her resilience, a defiance against the odds stacked against her. "Painting saved me," she declared, her eyes shining with determination. "It gave me the strength to keep fighting, to keep pushing forward even when the world seemed dark and uncertain."</p>
+            <p>Against all expectations, Ulla emerged victorious from her battle with cancer, her spirit unbroken and her passion for art burning brighter than ever before. It was a triumph that seemed almost miraculous, a testament to the power of the human spirit to overcome even the most formidable of challenges. "It was like emerging from the shadows into the light," she mused, her voice tinged with gratitude and awe. "I had faced the darkness head-on and emerged stronger for it."
+
+            </p>
+            <p>Today, Ulla's paintings serve as a powerful testament to the resilience of the human spirit, a reminder that even in the face of adversity, there is beauty to be found and strength to be gained. Her journey from darkness to light stands as an inspiration to all who encounter her art, a testament to the transformative power of perseverance and the enduring hope that lies within us all.</p>
+           
+            <!-- More paragraphs as needed -->
+        </div>
+        
+    </div>
+
+   
+</body>
+</html>

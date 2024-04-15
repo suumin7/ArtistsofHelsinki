@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<nav>
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="personal project.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="artist.html">ARTISTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>  
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<style>
+        nav{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+    body {
+        margin: 0; /* Remove default body margin */
+        font-family: 'Poppins', sans-serif; /* Set default font family */
+    }
+
+    .header {
+        position: relative;
+        height: 300px; /* Adjust as needed */
+        background-image: url(images/melbanner.png); /* Replace 'big_picture.jpg' with your image path */
+        background-size: cover;
+        background-position: center;
+        opacity: 1; /* Adjust the opacity as needed */    
+    }
+
+    .header-text {
+        position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding: 1px 2px; /* Adjust top and bottom padding as needed */
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 40%;
+           
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 75px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .profile-info {
+        display: flex;
+        align-items: center;
+        margin-right: 40px; /* Adjust as needed */
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .profile-picture {
+        width: 250px; /* Adjust as needed */
+        height: auto;
+        border-radius: 50%; /* Make it round */
+        margin-right: 20px; /* Adjust as needed */
+    }
+
+    .story {
+        max-width: 800px; /* Adjust as needed */
+    }
+
+    .story h1 {
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .story p {
+        line-height: 1.4;
+    }
+
+    .go-back-home {
+    position: fixed;
+    bottom: 20px; /* Adjust vertical position */
+    left: 20px; /* Adjust horizontal position */
+}
+
+.go-back-home button {
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: #f44336; /* Red text color */
+    border: 2px solid #f44336; /* Red border */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.go-back-home button:hover {
+    background-color: #f44336; /* Red background on hover */
+    color: white; /* White text color on hover */
+    transition: 0.5s;
+}
+
+.go-back-home button:hover {
+    background-color: #d32f2f;
+}
+
+  
+
+    
+</style>
+
+    
+</head>
+<body>
+
+    <div class="header">
+        
+        <div class="header-text">
+            <h1 class="name">Melissa Tran</h1>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="profile-info">
+            <img class="profile-picture" src="images/MEL.png" alt="Profile Picture"> <!-- Replace 'small_picture.jpg' with your image path -->
+            <div>
+                <p><strong>Name:</strong> Melissa Tran</p>
+                <p><strong>Art Style:</strong> Nail artist</p>
+            </div>
+        </div>
+
+        <div class="go-back-home">
+            <button onclick="window.location.href = 'personal project.html';">Go back home</button>
+        </div>
+
+        <div class="story">
+            <h1 style="font-weight: bold; font-size: 24px;">Melissa Tran: a story of inspiration</h1>
+
+            <p>Mel, also known as "Bonded by Mel," didn't inherit her passion for nail art from family tradition. Instead, she discovered her knack for intricate designs during her formative years while waiting for her mom, a nail technician, to finish work. It was here, in the vibrant world of nail art, that Mel's journey as an artist began.
+            </p>
+            <p>While many teens were navigating high school, Mel was honing her craft, delving into the world of nail design during her free time. Initially viewed as a backup plan, her interest in nail art quickly blossomed into a thriving side hustle, thanks to her mother's guidance and her own dedication.
+            </p>
+            <p>As Mel's skills grew, so did her confidence. Opening her Instagram account marked a turning point, as she began attracting clients beyond her immediate circle. Through trial and error, Mel refined her artistic style, drawing inspiration from fellow nail artists and the diverse array of designs found on platforms like Pinterest.
+            </p>
+            <p>But success didn't come without its challenges. Early mishaps with the drill taught Mel the importance of precision and control while balancing her burgeoning nail business with her academic commitments required careful planning and prioritization.
+            </p>
+            <p>Despite the obstacles, Mel's perseverance paid off. She found fulfillment in cultivating a loyal clientele and witnessing the transformation her art brought to others. Through her work, Mel aims not only to boost her clients' confidence but also to express their unique personalities through intricate nail designs.
+            </p>
+            <p>Looking ahead, Mel dreams of expanding her social media presence, collaborating with fellow nail artists, and continuing to inspire others with her creations. Ultimately, she hopes to leave a legacy of empowerment, showing others that confidence can be found at the tip of a brush.
+            </p>
+            <p>In Mel's hands, nail art isn't just about aesthetics—it's about self-expression, confidence, and the transformative power of creativity.
+
+
+            </p>
+            <!-- More paragraphs as needed -->
+        </div>
+        
+    </div>
+
+   
+</body>
+</html>
